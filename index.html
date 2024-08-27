@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde na Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+        <div class="logo-title">
+            <img src="planta.png" alt="Logo Verde na Cidade" class="logo">
+            <h1><a href="#home" onclick="scrollToSection('home')">Verde na Cidade</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#posts" class="nav-link" onclick="scrollToSection('posts')">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Imagem Principal -->
+    <section id="home" class="hero-image">
+        <div class="hero-text"  style=" font-family: 'Poppins', sans-serif; font-weight: 600; pointer-events: none;">
+           <h2 class="left-text">Seja Bem-Vindo</h2>
+            <p class="right-text">Transforme seu espaço urbano em um refúgio sustentável e descubra o poder de pequenas mudanças que fazem grande diferença para o planeta</p>
+            <div class="overlay"></div>
+        </div>
+    </section>
+    
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about-section">
+        <div class="container" >
+            
+            <div class="about-content"  style=" font-family: 'Poppins', sans-serif; font-weight: 600; pointer-events: none;">  
+                <p> Bem-vindo ao blog dedicado a trazer práticas sustentáveis do campo para a vida urbana. Nosso foco é ajudar você a adotar hábitos que beneficiam o meio ambiente, mesmo vivendo na cidade. Aqui você encontrará dicas de jardinagem urbana, consumo consciente, energia renovável, e muito mais, tudo com o objetivo de inspirar um estilo de vida mais verde e saudável. </p>
+            </div>
+            <img src="95336f_e58b4f6df3874aa081f4bf4525ddef54_mv2.png" alt="">
+        </div>
+    </section>
+
+    <!-- Seção de Postagens -->
+    <section id="artigos-recentes" class="recent-articles">
+        <div class="container">
+            <h2>Artigos Recentes</h2>
+            
+            <div class="articles-wrapper">
+                <div class="article">
+                    <img src="horta_de_apartamento_pequeno.jpg" alt="plantas suspensas em apartamento" class="article-image">
+                    <div class="article-content">
+                        <a href="artigo1.html" class="article-title">Transforme Pequenos Espaços em Hortas Verticais</a>
+                        <p>Viver na cidade muitas vezes significa lidar com falta de espaço, mas isso não precisa ser um obstáculo para cultivar suas próprias plantas.</p>
+                    </div>
+                </div>
+    
+                <div class="article">
+                    <img src="Eco-Friendly-Organic-Beauty-Care-Products.jpg" alt="produtos sustentaveis" class="article-image">
+                    <div class="article-content">
+                        <a href="artigo2.html" class="article-title">Como Reduzir o Uso de Plásticos no Dia a Dia? </a>
+                        <p> O plástico está presente em quase todos os aspectos da nossa vida moderna, mas seu impacto no meio ambiente é alarmante. Desde oceanos poluídos até problemas de saúde relacionados ao plástico, há muitas razões para buscar alternativas mais sustentáveis. </p>
+                    </div>
+                </div>
+    
+                <div class="article">
+                    <img src="placas solares.jpg" alt="Descrição da Imagem 3" class="article-image">
+                    <div class="article-content">
+                        <a href="artigo3.html" class="article-title">Energia Solar: Como Aproveitar a Energia do Sol em Casa</a>
+                        <p>A energia solar está se tornando uma opção cada vez mais acessível e eficiente para residências urbanas. Além de reduzir a conta de luz, ela contribui significativamente para a redução da pegada de carbono, uma vez que é uma fonte de energia limpa e renovável.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    
+    <section class="participate-section">
+        
+        <div class="participate-container">
+            <div class="participate-box">
+                <div class="participate-text">
+                    
+                    <h2>QUER DAR UMA DICA? MANDE SEU EMAIL</h2>
+                </div>
+                <form class="participate-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                    <button type="submit">PARTICIPAR</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Verde na Cidade. Todos os direitos reservados.</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
