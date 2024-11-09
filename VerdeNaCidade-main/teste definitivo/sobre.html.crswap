@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Verde na Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Verifica se o usuário estava na página de postagens e rola para ela
+            if (localStorage.getItem('scrollToPosts')) {
+                localStorage.removeItem('scrollToPosts');
+                window.location.hash = '#posts';
+                setTimeout(() => {
+                    document.querySelector(window.location.hash).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
+        });
+
+        function goToPosts() {
+            localStorage.setItem('scrollToPosts', 'true');
+            window.location.href = 'index.html#posts';
+        }
+    </script>
+</head>
+<body>
+
+   <!-- Cabeçalho -->
+   <header>
+    <div class="container">
+        <h1><a href="#home">Verde na Cidade</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#posts" class="nav-link" onclick="scrollToSection('posts')">Blog</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Conteúdo da Página Sobre -->
+<section class="about-section2">
+    <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>
+            Bem-vindo ao nosso site, um espaço dedicado a inspirar e capacitar pessoas a integrarem práticas sustentáveis em suas vidas urbanas. Vivemos em um mundo onde o ritmo acelerado das cidades muitas vezes nos desconecta da natureza e das práticas tradicionais de vida sustentável. Nosso objetivo é reverter essa tendência, trazendo ideias e soluções simples que possam ser implementadas em ambientes urbanos, sem a necessidade de grandes espaços ou recursos.
+        </p>
+
+        <h2>Nossa Missão</h2>
+        <p>
+            Nossa missão é transformar a maneira como as pessoas pensam sobre sustentabilidade, mostrando que é possível adotar um estilo de vida mais verde, mesmo em áreas densamente urbanizadas. Queremos que todos, desde moradores de apartamentos pequenos até famílias em grande centros urbanos, possam encontrar maneiras práticas de reduzir seu impacto ambiental e viver de forma mais consciente.
+        </p>
+
+        <h2>O Que Você Vai Encontrar Aqui</h2>
+        <p>
+            Dicas de jardinagem urbana: aprenda a cultivar seu próprio alimento em pequenos espaços, seja em varandas, terraços, ou até mesmo em paredes internas.
+            Guia de vida sustentável: Descubra alternativas ao plástico, formas de reduzir o consumo de energia, e outras práticas que você pode adotar para viver de forma mais ecológica.
+            Histórias Inspiradoras: Compartilhamos histórias de pessoas que fizeram a transição para um estilo de vida mais sustentável em meio à vida urbana. Essas histórias servem para motivar e mostrar que, com pequenas mudanças, todos podemos contribuir para um mundo melhor.
+        </p>
+
+        <h2>Por que Escolher Nosso Site?</h2>
+        <p>
+            Nosso site é feito por pessoas comuns, assim como você, que se preocupam com o meio ambiente e querem compartilhar práticas sustentáveis que funcionam no dia a dia urbano. Nós acreditamos que a sustentabilidade não precisa ser complicada ou inacessível. Em vez de especialistas, somos entusiastas que experimentam, aprendem e aplicam essas práticas em nossas próprias vidas. Queremos que nossos leitores se sintam encorajados e capacitados para fazer pequenas mudanças que, somadas, podem ter um grande impacto. Acreditamos que, juntos, podemos criar uma comunidade vibrante onde todos possam aprender, compartilhar e inspirar uns aos outros.
+        </p>
+
+        <h2>Entre em Contato</h2>
+        <p>
+            Se você tem alguma dúvida, sugestão, ou apenas quer compartilhar uma ideia, não hesite em entrar em contato conosco. Estamos sempre abertos a novas ideias e ansiosos para ouvir nossos leitores. Vamos construir um futuro mais verde, um passo de cada vez.
+        </p>
+        
+    </div>
+</section>
+
+<section class="diquinhas"></section>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container">
+        
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <div class="footer-content">
+                    <p>&copy; 2024 Verde na Cidade. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
